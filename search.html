@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Example</title>
+    <style>
+        section {
+            height: 100vh;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="search-bar" placeholder="Search for a topic...">
+<button onclick="searchTopic()">Search</button>
+
+<section id="topic1">
+    <h2>Topic 1</h2>
+    <p>This is the content for topic 1.</p>
+</section>
+
+<section id="topic2">
+    <h2>Topic 2</h2>
+    <p>This is the content for topic 2.</p>
+</section>
+
+<section id="topic3">
+    <h2>Topic 3</h2>
+    <p>This is the content for topic 3.</p>
+</section>
+
+<script>
+    function searchTopic() {
+        const query = document.getElementById('search-bar').value.toLowerCase();
+        const sections = document.querySelectorAll('section');
+        let found = false;
+
+        sections.forEach(section => {
+            const heading = section.querySelector('h2');
+            if (heading && heading.innerText.toLowerCase().includes(query)) {
+                section.scrollIntoView({ behavior: 'smooth' });
+                found = true;
+            }
+        });
+
+        if (!found) {
+            alert('Topic not found.');
+        }
+    }
+</script>
+</body>
+</html>

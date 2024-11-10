@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+.img{
+    display: flex;
+   justify-content: center;
+   height:400px;
+   width: 400px;
+   padding-left: 30rem;
+}
+
+.image{
+    height:auto;
+    width:350px;
+}
+.wrap ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.wrap ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.wrap ul li a:hover,
+.wrap ul li a.active {
+    background: burlywood;
+    color: rgb(97, 97, 98);
+    text-decoration: none;
+}
+#myButton2{
+    background-color: grey;
+    color:black;
+    padding:5px 5px;
+    font-size: medium;
+}
+#myButton3{
+    background-color: grey;
+    color:black;
+    padding:5px 5px;
+    font-size: medium;
+}

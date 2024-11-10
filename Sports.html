@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Login</title>
+    <link rel="stylesheet" href="sports.css">
+</head>
+<body>
+    <header class="wrap">
+        <a href="#" class="logo">
+            <img src="assist/logo/logo.png" alt="Logo" style="height: 50px; width: auto;">
+        </a>
+        <ul>
+            <li><a href="Evento.html">Home</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="Event.html" class="active">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <br><br><br>
+
+    <div class="events-box">
+        <h1 id="myH1">Sports Events</h1>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="slidder">
+        <img src="c:/Users/manth/Music/CODE/WhatsApp Image 2024-06-05 at 21.44.41_8c49fe04.jpg" alt="something went wrong cannot load" id="myH1" class="image">
+        <img src="c:/Users/manth/Music/CODE/WhatsApp Image 2024-05-22 at 20.48.58_a5f23941.jpg" alt="something went wrong cannot load" id="myH2"  class="image" >
+        <img src="c:/Users/manth/Music/CODE/WhatsApp Image 2024-06-05 at 21.44.57_42442513.jpg" alt="something went wrong cannot load" id="myH3"  class="image">
+        <img src="c:/Users/manth/Music/CODE/WhatsApp Image 2024-06-05 at 21.50.09_0f160b85.jpg" alt="something went wrong cannot load" id="myH4"  class="image">
+    </div>
+    <div class="E-box">
+        <br>
+        <div>
+            <h1 style="text-align: center;color:wheat">The Importance of Sports in Society</h1>
+        </div>
+        <div>
+            <p style="color: white;">Sports play a crucial role in shaping individuals and society. They are more than just physical activities; they are a fundamental part of our culture and community, providing numerous benefits that extend beyond the playing field. Engaging in sports promotes physical health, fosters teamwork, and builds character, making it an essential element in personal development and social cohesion.
+
+            And we, of the event-management committee, are organizing a sports event from 3/6/24 to 5/7/24. We hope for as many people as possible to join the sports event as it will be very fun.
+            </p>
+        </div>
+    </div>
+
+    <button type="button" id="myButton" onclick="toggleForm()">List of the sports:</button>
+    <div class="btn" style="text-align: left; color:burlywood; border-radius: 50px;">
+        <a href="contact.html">
+            <button type="button" id="reachus">Reach us</button>
+        </a>
+    </div>
+
+    <fieldset id="Fieldset" style="display:none">
+        <form id="Form">
+            <h3>Please select the sport you want to register:</h3>
+            <div id="container">
+                <p style="color: aliceblue;" id="R1" name="sport">Basketball</p><br>
+                <p style="color: aliceblue;" id="R2" name="sport">Football</p><br>
+                <p style="color: aliceblue;" id="R3" name="sport">Cricket</p><br>
+                <p style="color: aliceblue;" id="R4" name="sport">Tennis</p><br>
+                <p style="color: aliceblue;" id="R5" name="sport">Running</p><br>
+            </div>
+        </form>
+    </fieldset>
+
+    <p id="Result"></p>
+
+    <div id="confirmation" style="display:none">
+        <h1 id="myP1">You have successfully registered for your desired sports. You can leave this page now. Thank you!</h1>
+    </div>
+
+    <script>
+        function toggleForm() {
+            const form = document.getElementById("Fieldset");
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

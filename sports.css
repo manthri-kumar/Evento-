@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.wrap ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.wrap ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.wrap ul li a:hover,
+.wrap ul li a.active {
+    background: burlywood;
+    color: rgb(97, 97, 98);
+    text-decoration: none;
+}
+
+#myH1 {
+    text-align: center;
+    color: burlywood;
+}
+
+.events-box{
+    border:2px solid black;
+    border-radius: 5em;
+    width:80%;
+    padding:25px;
+    margin: 0 auto;
+    margin-bottom: 15px;;
+    color: burlywood;
+}
+
+
+body{
+    background-color:black;
+}
+
+#slidder {
+    text-align: center; 
+
+}
+
+#slidder img {
+    width: 80%; 
+    margin: 10px auto; 
+    display: flex; 
+
+}
+
+#myButton{
+    padding:5px;
+    background-color: gray;
+
+}
+
+#myP1{
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: larger;
+    color:blue;
+}
+
+#myButton {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+#myButton:hover{
+    background-color: red;
+
+}
+
+#Fieldset{
+    text-align: center;
+    padding:25px;
+    margin-top: 7px;
+}
+
+#myH1{
+    text-align: center;
+}
+
+#myH2{
+    text-align: center;
+}
+
+
+#myH3{
+    text-align: right;
+}
+.slidder{
+    display:flex;
+    gap:15px;
+}
+
+.image{
+    width:400px;
+    height:auto;
+}
+#myH4{
+    text-align: right;
+}
+.btn {
+    color: burlywood;
+    text-align: center;
+    cursor: pointer;
+    margin: auto; 
+}

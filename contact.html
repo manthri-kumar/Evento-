@@ -1,0 +1,197 @@
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+
+    <header class="wrap">
+        <a href="#" class="logo">
+            <img src="assist/logo/logo.png" alt="" style="height: 50px; width: auto;">
+        </a>
+        <ul>
+            <li><a href="Evento.html">Home</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="Event.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#Contact" class="active">Contact</a></li>
+        </ul>
+    </header>
+    <script>
+
+        function validateForm() {
+            let firstName = document.getElementById("FIRSTNAME").value;
+            let lastName = document.getElementById("LASTNAME").value;
+            let email = document.getElementById("EMAILADDRESS").value;
+            let phoneNumber = document.getElementById("PHONENUMBER").value;
+            const eventDateInput = document.getElementById("EVENTDATE").value;
+            const eventDate = new Date(eventDateInput);
+            const currentDate = new Date();
+            const minDate = new Date();
+            minDate.setDate(currentDate.getDate() + 2);
+
+            if (!validateName(firstName)) {
+                alert("Please enter a valid first name (letters only).");
+                return false;
+            }
+
+            if (!validateName(lastName)) {
+                alert("Please enter a valid last name (letters only).");
+                return false;
+            }
+
+            if (!validateEmail(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            if (!validatePhoneNumber(phoneNumber)) {
+                alert("Please enter a valid phone number (10 digits).");
+                return false;
+            }
+            if(eventDate === ""){
+                alert("Please Enter a date ");
+                return false;
+            }
+
+            if (eventDate < minDate) {
+                alert("Event date must be at least 2 days from today.");
+                return false;
+            }
+
+            return true;
+        }
+
+        function validateName(name) {
+            const namePattern = /^[A-Za-z]+$/;
+            return namePattern.test(name);
+        }
+
+        function validateEmail(email) {
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return emailPattern.test(email);
+        }
+
+        function validatePhoneNumber(phoneNumber) {
+            const phonePattern = /^\d{10}$/;
+            return phonePattern.test(phoneNumber);
+        }
+    </script>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    body{
+        background-color: black;
+        font-family: Noto Sans;
+    }
+
+
+</style>
+<body >
+    <div class="p">
+        <h4><p style="text-align: center; color: burlywood; justify-content: center;">SEND US A MESSAGE </h4><h1 style="text-align: center; color: ghostwhite;">LET'S GET STARTED</p></h1></p>
+    <div>
+    <div class="form">
+        <form>
+            <div class="container">
+                <div class = "enteryarea">
+                    <input type="text" id="FIRSTNAME" required>
+                    <div class="labelline">FIRST NAME</div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class = "enteryarea">
+                        <input type="text" id="LASTNAME" required>
+                        <div class="labelline">LAST NAME</div>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class = "enteryarea">
+                            <input type="email" id="EMAILADDRESS" required>
+                            <div class="labelline">EMAIL ADDRESS </div> 
+                        </div>
+                    <br>
+                    <div class="container">
+                        <div class = "enteryarea">
+                            <input type="text" id="PHONENUMBER" required>
+                            <div class="labelline">PHONE NUMBER</div>
+                        </div>
+                        <br>
+                        <div class="container">
+                            <div class = "enteryarea">
+                                <select id="eventType"  required>
+                                    <option value="Tyoe">Type Of Event</option>
+                                  <option value="birthday">Birthday</option>
+                                      <option value="wedding">Wedding</option>
+                                      <option value="cultural">Cultural Event</option>
+                                  </select>
+                                <div class="labelline">TYPE OF EVENT</div>
+                            </div>
+                        <br>
+                        <div class="container">
+                            <div class = "enteryarea" style="color: aliceblue;">
+                                <input type="date" id="EVENTDATE" required>
+                                <div class="labelline">EVENT DATE</div>
+                            </div>
+                        <br>
+                        <br>
+                            <div class="container">
+                                <div class = "enteryarea">
+                                
+                                    
+                                    <select id="guest-count" required>
+                                        <option value="" disabled selected>Estimated Guest Count</option>
+                                        <option value="1-50">1-50</option>
+                                        <option value="51-100">51-150</option>
+                                        <option value="101-150">151-300</option>
+                                        <option value="151-200">301-500</option>
+                                        <option value="200+">501-700</option>
+                                    </select>
+
+                                </div>
+                                <br>
+                                <div class="container">
+                                    <div class = "enteryarea">
+                                        <select id="additi">
+                                            <option value="Additional">Additional Note</option>
+                                            <option value="Singing">SingingActivities</option>
+                                            <option value="Dancing">DancingActivities</option>
+                                            <option value="Cultural">CulturalActivities</option>
+                                            <option value="Suprise">SupriseParties</option>
+                                            <option value="Traditional">TraditionalThings</option>
+                                            
+                                        </select>
+                                        <div class="labelline">ADDITIONALNOTE</div>
+                                    </div>
+                                    <br>
+                                    <div class="btn" style="text-align: center;">
+                                        <button id="Submit" onclick="validateForm()">Submit</button>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="icons">
+                                            <i class="fab fa-facebook-f"></i>
+                                            <a href="https://www.youtube.com/watch?v=FzRltcHnkvo">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                                            <i class="fa-solid fa-angles-up" style="color: #ffffff; margin-left: 1200px; cursor: pointer;" ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+    
+</body>
+</html>

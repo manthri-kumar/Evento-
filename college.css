@@ -1,0 +1,154 @@
+body {
+    background-image: url('abstract-dark-background-with-flowing-colouful-waves.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: rgb(252, 250, 105);
+    font-style: oblique;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(106, 185, 246);
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffc250;
+    color: gray;
+    border: 1px solid #ffc250;
+}
+
+#sliderw {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.slides img {
+    width: 30%;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slides img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+#Services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#Services h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#Services i {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#Services p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#Services a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(205, 253, 45);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#Services a:hover {
+    background-color: #ffc250;
+    color: rgb(23, 153, 179);
+    border-radius: 10px;
+}
+
+div p, h1 {
+    color: white;
+}
+
+div {
+    margin: 20px 30px;
+    text-align: center;
+}
+
+div b {
+    text-align: left;
+}
+
+div button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    background-color: #ffc250;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+div button:hover {
+    background-color: #ffb030;
+    transform: scale(1.05);
+}
+
+#Things span {
+    color: rgb(229, 229, 64);
+}

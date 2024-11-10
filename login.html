@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evento</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body {
+        background-image: url("file:///C:/Users/manth/Downloads/Black%20and%20Gold%20Illustrated%20Portfolio%20Cover%20Page%20A4.png");
+        background-size: cover;
+    }
+
+        form {
+            border: 4px transparent;
+            border-radius: 5px;
+            padding: 40px;
+            width: 350px;
+            height: 350px;
+            max-width: 500px;
+            margin: 0 auto;
+            backdrop-filter: blur(20px);
+            text-align: center;
+        }
+        .login {
+            color: #e8ad65
+        }
+        .Remember {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header class="wrap">
+        <a href="#" class="logo">
+            <img src="assist/logo/logo.png" alt="" style="height: 50px; width: auto;">
+        </a>
+        <ul>
+            <li><a href="Evento.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+            <li><div class="fas fa-search" id="search-btn"></div></li>
+            <li><div class="fas fa-bars" id="menu-btn"></div></li>
+        </ul>
+    </header>
+    <form>
+        <div style="text-align: center;" class="login">
+            <h1>LOGIN</h1>
+        </div>
+        <br>
+        <div class="input">
+            <input type="text" id="username" placeholder="Enter name" required>
+        </div>
+        <br>
+        <div class="password" style="text-align: center;">
+            <input type="password" id="password" placeholder="Enter your Password" required>
+            <br>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <button type="button" class="button" onclick="func()">Submit</button>
+        </div>
+        <br>
+        <div style="color: aliceblue;">
+            <input type="checkbox" id="reminder" class="Remember">
+            <label for="reminder"> Remember me</label>
+            <a href="#" style="color: #e8ad65;">Forgot password?</a>
+        </div>
+        <br>
+        <br>
+        <label for="reminder" style="color: aliceblue;"> Don't have an account?</label>
+        <a href="#" style="color: #e8ad65;">Register</a>
+    </form>
+</body>
+</html>

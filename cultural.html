@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community and Cultural Events</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            color: gold;
+            background-color: black;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1, h3 {
+            text-align: center;
+            color: gold;
+            font-family: Raleway, Cochin, Georgia, Times, 'Times New Roman', serif;
+            word-spacing: 5px;
+            line-height: 1.5;
+        }
+        table {
+            width: 100%;
+            border-spacing: 20px;
+        }
+        td {
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            max-width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+        hr {
+            border: 1px solid gold;
+        }
+        .buttons-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: gold;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: darkgoldenrod;
+        }
+        .form-container {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        label {
+            color: gold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .submit-button {
+            background-color: gold;
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+        .submit-button:hover {
+            background-color: darkgoldenrod;
+        }
+        #result {
+            margin-top: 20px;
+            color: gold;
+        }
+        @media (max-width: 800px) {
+            table, td {
+                display: block;
+                width: 100%;
+            }
+            td {
+                margin-bottom: 20px;
+            }
+        }
+
+        .header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 7rem;
+    padding: auto;
+}
+
+.header .navigation a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .navigation a:hover{
+    color:burlywood;
+}
+
+
+
+
+    .header .navigation {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+    }
+
+    .header .navigation a {
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+.home .home-slider .swiper-slide{
+    overflow: hidden;
+    border-radius: 0.5rem;
+    height: 50rem;
+    width: 35rem;
+}
+
+.home .home-slider .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    padding-bottom: none;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 0rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading span{
+    color: var(--main-colour);
+    text-transform: uppercase;
+}
+
+.About{
+    padding-top: 0%;
+}
+
+.About .row .content{
+    flex: 1 1 45rem;
+    font-size: medium;
+}
+
+.content h3{
+    font-size: 3.5rem;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.About .row .content p{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 2;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.btn button{
+    background-color: var(--main-colour);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.button{
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: var(--main-colour);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.button-group{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.wrap ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.wrap ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.wrap ul li a:hover,
+.wrap ul li a.active{
+    background: var(--main-colour);
+    color:burlywood;
+    text-decoration: none;
+}
+
+.wrap{
+    font-size: medium;
+}
+
+    </style>
+    <script>
+        function showForm(formId) {
+            document.getElementById('communityForm').style.display = 'none';
+            document.getElementById('culturalForm').style.display = 'none';
+            document.getElementById(formId).style.display = 'block';
+        }
+
+        function handleSubmit(event, formId) {
+            event.preventDefault();
+
+            const form = document.getElementById(formId);
+            const formData = new FormData(form);
+            const result = document.getElementById('result');
+
+            let output = '<h3>Submitted Information:</h3><ul>';
+            formData.forEach((value, key) => {
+                output += <li><strong>${key}:</strong> ${value}</li>;
+            });
+            output += '</ul>';
+
+            result.innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <header class="wrap">
+        <a href="#" class="logo">
+            <img src="assist/logo/logo.png" alt="Logo" style="height: 50px; width: auto;">
+        </a>
+        <ul>
+            <li><a href="Evento.html">Home</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="Event.html" class="active">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <br><br><br>
+
+    <div class="container">
+        <br>
+        <h1>Community and Cultural Events</h1>
+        <br>
+        <hr color="gold">
+        <br>
+        <h3>Welcome to our Cultural and Community Events page! Here, we celebrate the vibrant tapestry
+        of our diverse community through a rich array of cultural festivities, local traditions, and communal activities.
+        Our events aim to foster unity, encourage cultural exchange, and strengthen the bonds within our community.
+        Whether you're looking to explore new cultures, participate in traditional ceremonies, or simply enjoy a fun-filled day with 
+        neighbors, there's something for everyone. Join us in embracing the spirit of togetherness and discovering the unique 
+        stories that make our community so special. Come be a part of our shared journey and create lasting memories with us!</h3>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <img src="c:\Users\manth\OneDrive\Pictures\Screenshots\Screenshot 2024-06-05 174527.png" alt="Something went wrong. Image can't load">
+                </td>
+                <td>
+                    <img src="c:\Users\manth\OneDrive\Pictures\Screenshots\Screenshot 2024-06-05 174636.png" alt="Something went wrong. Image can't load">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="c:\Users\manth\OneDrive\Pictures\Screenshots\Screenshot 2024-06-06 101717.png" alt="Something went wrong. Image can't load">
+                </td>
+                <td>
+                    <img src="c:\Users\manth\OneDrive\Pictures\Screenshots\Screenshot 2024-06-06 101744.png" alt="Something went wrong. Image can't load">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="c:\Users\manth\OneDrive\Pictures\Screenshots\Screenshot 2024-06-06 101852.png" alt="Something went wrong. Image can't load">
+                </td>
+        </table>
+        <div class="buttons-container">
+            <h3>Book the Event</h3>
+            <div class="btn" style="text-align: center;">
+                <a href="contact.html">
+                    <button type="button" id="reachus">Cultural</button>
+                </a>
+            </div>
+          

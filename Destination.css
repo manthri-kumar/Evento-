@@ -1,0 +1,193 @@
+.head {
+    position: sticky;
+}
+body {
+
+    background-color:black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: #ffc250;
+    font-style: oblique;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffc250;
+    color: gray;
+}
+
+#sliderw {
+    text-align: center;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+    padding: 10px 0;
+    margin: 0 -10px; 
+}
+
+.slides img {
+    width: 30%;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.slides img:hover {
+    transform: scale(1.1);
+}
+
+#Services {
+    text-align: center;
+}
+
+#Services h1 {
+    margin-bottom: 20px;
+}
+
+#Services i {
+    font-style: italic;
+}
+
+#Services p {
+    margin-bottom: 20px;
+}
+
+#Services a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    margin-right: 10px;
+    font: bold;
+    font-size: large;
+    font-family: initial;
+    color:#fff;
+}
+
+#Services a:hover {
+    background-color: #ffc250;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.service-links a:hover {
+    background-color: #ffc250;
+    color: gray;
+}
+
+div p, h1 {
+    color: rgb(255, 255, 255);
+}
+
+div {
+    margin-right: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #fffcfc;
+}
+
+div b {
+    text-align: left;
+}
+
+div button {
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    background-color: #ffc250;
+    cursor: pointer;
+    text-decoration: None;
+}
+#Things {
+    text-align: center;
+    margin: 20px;
+}
+
+#Things h1, #Things h2 {
+    color:#ffc250;
+}
+
+.images-wrapper {
+    display: flex;
+    justify-content: center;
+    flex: wrap;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 300px; 
+    height: auto;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.image-container:hover .hover-text {
+    opacity: 1;
+    transform: scale(1.05);
+}
